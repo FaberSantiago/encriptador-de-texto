@@ -215,4 +215,19 @@ body{
         background-image: none;
     }
 
+    .contenido-mensaje-parrafo-div{
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .contenido-mensaje-parrafo{
+        text-align: center;
+    }
+
+    .contenido-mensaje-parrafo2{
+        text-align: center;
+    }
+
 }
