@@ -107,7 +107,6 @@ body{
 }
 
 .contenido-mensaje-texto{
-    background-color: var(--color-terciario);
     resize: none;
     border: none;
     border-radius: 5px;
