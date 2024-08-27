@@ -44,4 +44,5 @@ function botonDesencriptar(){
 function copiar(){
     textoMensaje.select();
     document.execCommand("copy");
+    textoMensaje.value = "";
 }
