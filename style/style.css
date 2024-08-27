@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 3%;
+}
+
+.header-imagen{
+    width: 6%;
+}
+
+.contenido{
+    display: flex;
+    padding: 0% 10%;
+}
+
+.contenido-encriptar-texto{
+    resize: none;
+    font-weight: 400;
+    border: none;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    font-size: 2rem;
+    outline: none;
+    
+}
+
+.contenido-encriptar-texto::placeholder{
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.contenido-encriptar-informacion{
+    font-size: 1rem;
+    color: #495057;
+    margin: 2%;
+}
+
+.contenido-encriptar-botones{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    border-radius: 1.5rem;
+    color: #FFFFFF;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.boton-encriptar:hover{
+    background-color: #FFFFFF;
+    color: #0A3871;
+}
+
+.boton-Desencriptar{
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    color: #0A3871;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+.boton-Desencriptar:hover{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.contenido-mensaje{
+    background-color: #FFFFFF;
+    margin: 0% 7%;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido-mensaje-texto{
+    background-color: #FFFFFF;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    color: #495057;
+    font-weight: 400;
+    font-size: 2rem;
+    background-image: url(/assets/Muneco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 60% 90%;
+    margin-top: 3%;
+    outline: none;
+}
+
+.contenido-mensaje-parrafo-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-mensaje-parrafo{
+    color: #343A40;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.contenido-mensaje-parrafo2{
+    color: #495057;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.boton-copiar{
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    color: #0A3871;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boton-copiar:hover{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.footer{
+    background-color: #0A3871;
+    padding: 4px;
+    margin-top: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (max-width: 1000px){
+
+    .contenido{
+        flex-direction: column;
+        padding: 0% 1%;
+        justify-content: center;
+    }
+    
+    .contenido-encriptar{
+        margin: 0% 5%;
+        width: auto;
+    }
+
+    .contenido-encriptar-texto{
+        width: 100%;
+
+    }
+
+    .contenido-encriptar-botones{
+        align-items: center;
+    }
+
+    .contenido-mensaje{
+        margin: 2% 5%;
+        width: auto;
+        flex-direction: column-reverse;
+    }
+
+    .contenido-mensaje-texto{
+        width: 100%;
+        background-image: none;
+    }
+
+    .contenido-mensaje-parrafo-div{
+        margin-top: 2%;
+    
+    }
+
+}
+
+@media (max-width: 400px){
+    .contenido-encriptar-botones{
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
