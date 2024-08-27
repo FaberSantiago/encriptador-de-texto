@@ -196,7 +196,6 @@ body{
 
     .contenido-mensaje-texto{
         width: 100%;
-        background-image: none;
     }
 
     .contenido-mensaje-parrafo-div{
@@ -210,6 +209,10 @@ body{
     .contenido-encriptar-botones{
         align-items: center;
         flex-direction: column;
+    }
+    
+    .contenido-mensaje-texto{
+        background-image: none;
     }
 
 }
