@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #FFFFFF; 
+    --color-texto1: #495057; 
+    --color-texto2: #343A40;
+    ;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +16,7 @@
 }
 
 body{
-    background-color: #F3F5FC;
+    background-color: var(--color-primario);
     box-sizing: border-box;
 }
 
@@ -28,22 +37,22 @@ body{
     resize: none;
     font-weight: 400;
     border: none;
-    color: #0A3871;
-    background-color: #F3F5FC;
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
     font-size: 2rem;
     outline: none;
     
 }
 
 .contenido-encriptar-texto::placeholder{
-    color: #0A3871;
+    color: var(--color-secundario);
     font-weight: 400;
     font-size: 2rem;
 }
 
 .contenido-encriptar-informacion{
     font-size: 1rem;
-    color: #495057;
+    color: var(--color-texto1);
     margin: 2%;
 }
 
@@ -54,42 +63,42 @@ body{
 }
 
 .boton-encriptar{
-    background-color: #0A3871;
+    background-color: var(--color-secundario);
     border-radius: 1.5rem;
-    color: #FFFFFF;
+    color: var(--color-terciario);
     width: 200px;
     height: 40px;
     cursor: pointer;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--color-secundario);
     font-weight: 400;
     font-size: 1rem;
 }
 
 .boton-encriptar:hover{
-    background-color: #FFFFFF;
-    color: #0A3871;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
 }
 
 .boton-Desencriptar{
-    background-color: #FFFFFF;
+    background-color: var(--color-terciario);
     border-radius: 1.5rem;
-    color: #0A3871;
+    color: var(--color-secundario);
     width: 200px;
     height: 40px;
     cursor: pointer;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--color-secundario);
     font-weight: 400;
     font-size: 1rem;
 
 }
 
 .boton-Desencriptar:hover{
-    background-color: #0A3871;
-    color: #FFFFFF;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 
 .contenido-mensaje{
-    background-color: #FFFFFF;
+    background-color: var(--color-terciario);;
     margin: 0% 7%;
     border-radius: 1.5rem;
     display: flex;
@@ -98,14 +107,14 @@ body{
 }
 
 .contenido-mensaje-texto{
-    background-color: #FFFFFF;
+    background-color: var(--color-terciario);
     resize: none;
     border: none;
     border-radius: 5px;
-    color: #495057;
+    color: var(--color-texto1);
     font-weight: 400;
     font-size: 2rem;
-    background-image: url("../assets/Muneco.png");
+    background-image: url(/assets/Muneco.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
@@ -122,26 +131,26 @@ body{
 }
 
 .contenido-mensaje-parrafo{
-    color: #343A40;
+    color: var(--color-texto2);
     font-weight: 700;
     font-size: 1.5rem;
 
 }
 
 .contenido-mensaje-parrafo2{
-    color: #495057;
+    color: var(--color-texto1);
     font-weight: 400;
     font-size: 1rem;
 }
 
 .boton-copiar{
-    background-color: #FFFFFF;
+    background-color: var(--color-terciario);
     border-radius: 1.5rem;
-    color: #0A3871;
+    color: var(--color-secundario);
     width: 200px;
     height: 40px;
     cursor: pointer;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--color-secundario);
     font-weight: 400;
     font-size: 1rem;
     margin-top: 7%;
@@ -153,15 +162,15 @@ body{
 }
 
 .boton-copiar:hover{
-    background-color: #0A3871;
-    color: #FFFFFF;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 
 .footer{
-    background-color: #0A3871;
+    background-color: var(--color-secundario);
     padding: 4px;
     margin-top: 50px;
-    color: #FFFFFF;
+    color: var(--color-terciario);
     text-align: center;
     font-weight: 400;
 }
@@ -210,7 +219,7 @@ body{
         align-items: center;
         flex-direction: column;
     }
-    
+
     .contenido-mensaje-texto{
         background-image: none;
     }
@@ -229,5 +238,6 @@ body{
     .contenido-mensaje-parrafo2{
         text-align: center;
     }
+    
 
 }
